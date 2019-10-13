@@ -1,0 +1,10 @@
+settings = {}
+settings.data = {}
+settings.data.wifiName = "MPO"
+settings.data.wifiPassword = "12345678"
+settings.data.deviceToken = ybpAnaocH1Z1L4eEAAdj4cX3NXMpxr9k
+jsonString = cjson.encode(settings.data)
+file.open("config.json", "w")
+file.write(jsonString)
+file.close()
+node.restart()
